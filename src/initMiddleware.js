@@ -18,7 +18,6 @@ function initMiddleware() {
                     if(payload.type() === 'identify') {
                         analytics.identify(person._id, {email: ajs_user_traits.email})
                     } else {
-                        analytics.identify(person._id, {email: ajs_user_traits.email})
                         next(payload)
                     }
                 } else {
