@@ -5,7 +5,7 @@
   "main": "dist/index_bundle.js",
   "scripts": {
     "build": "webpack",
-    "deploy": "git push && webpack --config webpack.production.config.js",
+    "deploy": "webpack --config webpack.production.config.js && git push",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

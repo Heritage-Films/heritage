@@ -30,7 +30,7 @@ return /******/ (() => { // webpackBootstrap
 /*! runtime requirements: __webpack_require__, __webpack_exports__, __webpack_require__.r, __webpack_require__.d, __webpack_require__.* */
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\n/* harmony import */ var _initMiddleware__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./initMiddleware */ \"./src/initMiddleware.js\");\n;\nvar index = {\n  initMiddleware: _initMiddleware__WEBPACK_IMPORTED_MODULE_0__.default\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (index);\n\n//# sourceURL=webpack://HeritageSegment/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\n/* harmony import */ var _initMiddleware__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./initMiddleware */ \"./src/initMiddleware.js\");\n;\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\n  initMiddleware: _initMiddleware__WEBPACK_IMPORTED_MODULE_0__.default\n});\n\n//# sourceURL=webpack://HeritageSegment/./src/index.js?");
 
 /***/ }),
 
