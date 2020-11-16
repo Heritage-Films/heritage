@@ -1,3 +1,3 @@
 import initMiddleware from './initMiddleware'
 
-export default {initMiddleware}
+export {initMiddleware}

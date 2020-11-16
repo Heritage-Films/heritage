@@ -25,12 +25,12 @@ return /******/ (() => { // webpackBootstrap
   !*** ./src/index.js ***!
   \**********************/
 /*! namespace exports */
-/*! export default [provided] [maybe used in main (runtime-defined)] [usage prevents renaming] */
+/*! export initMiddleware [provided] [maybe used in main (runtime-defined)] [usage prevents renaming] -> ./src/initMiddleware.js .default */
 /*! other exports [not provided] [maybe used in main (runtime-defined)] */
-/*! runtime requirements: __webpack_require__, __webpack_exports__, __webpack_require__.r, __webpack_require__.d, __webpack_require__.* */
+/*! runtime requirements: __webpack_require__, __webpack_exports__, __webpack_require__.d, __webpack_require__.r, __webpack_require__.* */
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\n/* harmony import */ var _initMiddleware__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./initMiddleware */ \"./src/initMiddleware.js\");\n;\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\n  initMiddleware: _initMiddleware__WEBPACK_IMPORTED_MODULE_0__.default\n});\n\n//# sourceURL=webpack://HeritageSegment/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"initMiddleware\": () => /* reexport safe */ _initMiddleware__WEBPACK_IMPORTED_MODULE_0__.default\n/* harmony export */ });\n/* harmony import */ var _initMiddleware__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./initMiddleware */ \"./src/initMiddleware.js\");\n;\n\n\n//# sourceURL=webpack://HeritageSegment/./src/index.js?");
 
 /***/ }),
 
