@@ -5,8 +5,9 @@
   "main": "dist/index_bundle.js",
   "scripts": {
     "build": "webpack",
-    "deploy": "webpack --config webpack.production.config.js && git push",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "git-commit": "git add -A . && git commit -a -m 'master update'",
+    "git-push": "git push origin master --force && git checkout master",
+    "deploy": "npm run build && npm run git-commit && npm run git-push"
   },
   "repository": {
     "type": "git",
