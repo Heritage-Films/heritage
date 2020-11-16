@@ -15,12 +15,10 @@ function initMiddleware() {
                 if(person._id) {
                     console.log('Successfully fetched person from database')
                     console.log(person)
-                    analytics.identify(person._id, {email: ajs_user_traits.email})
-                    next(payload)
-                    return
                     if(payload.type() === 'identify') {
                         analytics.identify(person._id, {email: ajs_user_traits.email})
                     } else {
+                        analytics.identify(person._id, {email: ajs_user_traits.email})
                         next(payload)
                     }
                 } else {
