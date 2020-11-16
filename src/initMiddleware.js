@@ -1,7 +1,7 @@
 function initMiddleware() {
     analytics.addSourceMiddleware(async function({payload, next, integrations}) {
         var ajs_user_traits = JSON.parse(localStorage.getItem('ajs_user_traits'))
-        var ajs_user_id = localStorage.getItem('ajs_user_id')
+        var ajs_user_id = JSON.parse(localStorage.getItem('ajs_user_id'))
         console.log(`Analytic event type: ${payload.type()}`)
         console.log(payload)
         if(ajs_user_traits.email) {
