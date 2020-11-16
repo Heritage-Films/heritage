@@ -9,7 +9,7 @@ function initMiddleware() {
             console.log(ajs_user_traits.email)
 
             console.log(ajs_user_id)
-            if( (ajs_user_id === 'null') || (ajs_user_id.length !== 24) ) {
+            if( (ajs_user_id === null) || (ajs_user_id.length !== 24) ) {
                 console.log('ajs_user_id ' + ajs_user_id + ' is invalid. Fetch from database.') 
                 var url = 'https://api.movieschangepeople.com/api/people/identify/' + encodeURIComponent(ajs_user_traits.email)
                 const response = await fetch(url)
