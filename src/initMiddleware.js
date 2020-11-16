@@ -27,6 +27,8 @@ function initMiddleware() {
                 console.log('ajs_user_id is valid. call next.')
                 next(payload)
             }
+        } else {
+            console.log('No ajs_user_traits.email found')
         }
     })
 }
