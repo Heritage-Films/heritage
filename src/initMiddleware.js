@@ -2,6 +2,7 @@ function initMiddleware() {
     analytics.addSourceMiddleware(async function({payload, next, integrations}) {
         var ajs_user_traits = JSON.parse(localStorage.getItem('ajs_user_traits'))
         var ajs_user_id = JSON.parse(localStorage.getItem('ajs_user_id'))
+        var time_zone = JSON.parse(localStorage.getItem('hf_time_zone'))
         console.log(`Analytic event type: ${payload.type()}`)
         console.log(payload)
         if(ajs_user_traits.email) {
@@ -17,10 +18,14 @@ function initMiddleware() {
                 if(person._id) {
                     console.log('Successfully fetched person from database')
                     console.log(person)
-                    if(payload.type() !== 'identify') {
-                        next(payload)
-                    }
-                    analytics.identify(person._id, {email: ajs_user_traits.email, created_at: person.created})
+
+                    var traits = {}
+                    traits.email = ajs_user_traits
+                    traits.created_at = person.created
+                    if(time_zone) { traits.timezone = time_zone }
+                    analytics.identify(person._id, traits)
+
+                    if(payload.type() !== 'identify') { next(payload) }
                 } else {
                     console.log('Unable to fetch person from database')
                 }
