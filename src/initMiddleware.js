@@ -20,7 +20,7 @@ function initMiddleware() {
                     console.log(person)
 
                     var traits = {}
-                    traits.email = ajs_user_traits
+                    traits.email = ajs_user_traits.email
                     traits.created_at = person.created
                     if(time_zone.name) { traits.timezone = time_zone.name }
                     analytics.identify(person._id, traits)
