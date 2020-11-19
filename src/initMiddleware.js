@@ -2,7 +2,7 @@ function initMiddleware() {
     analytics.addSourceMiddleware(async function({payload, next, integrations}) {
         var ajs_user_traits = JSON.parse(localStorage.getItem('ajs_user_traits'))
         var ajs_user_id = JSON.parse(localStorage.getItem('ajs_user_id'))
-        var time_zone = JSON.parse(localStorage.getItem('hf_time_zone'))
+        var ip_data = JSON.parse(localStorage.getItem('hf_ip_data'))
         console.log(`Analytic event type: ${payload.type()}`)
         console.log(payload)
         if(ajs_user_traits.email) {
@@ -22,7 +22,17 @@ function initMiddleware() {
                     var traits = {}
                     traits.email = ajs_user_traits.email
                     traits.created_at = person.created
-                    if(time_zone.name) { traits.timezone = time_zone.name }
+                    if(ip_data) {
+                        if(ip_data.country_name) { traits.ip_country_name = ip_data.country_name }
+                        if(ip_data.country_code) { traits.ip_country_code = ip_data.country_code }
+                        if(ip_data.city) { traits.ip_city = ip_data.city }
+                        if(ip_data.region) { traits.ip_region = ip_data.region }
+                        if(ip_data.region_code) { traits.ip_region_code = ip_data.region_code }
+                        if(ip_data.postal) { traits.ip_postal_code = ip_data.postal }
+                        if(ip_data.latitude) { traits.ip_latitude = ip_data.latitude }
+                        if(ip_data.longitude) { traits.ip_longitude = ip_data.longitude }
+                        if(ip_data.time_zone) { traits.timezone = ip_data.time_zone.name }
+                    }
                     analytics.identify(person._id, traits)
 
                     if(payload.type() !== 'identify') { next(payload) }
