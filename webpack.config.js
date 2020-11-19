@@ -4,8 +4,8 @@ module.exports = {
   entry: path.resolve(__dirname, "src/index.js"),
   output: {
     path: path.resolve(__dirname, "dist"),
-    filename: "app.js",
-    library: "HeritageSegment",
+    filename: "[name].bundle.js",
+    // library: "HeritageSegment",
     libraryTarget: "umd",
   },
   module: {
