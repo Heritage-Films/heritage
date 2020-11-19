@@ -5,7 +5,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "[name].bundle.js",
-    // library: "HeritageSegment",
+    library: "HeritageAnalytics",
     libraryTarget: "umd",
   },
   module: {
