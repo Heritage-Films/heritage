@@ -11,16 +11,24 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.(js)$/,
-                exclude: /node_modules/,
-                use: {
-                    loader: "babel-loader", 
-                        options: {
-                        presets: ["@babel/preset-env"]  //Preset used for env setup
-                    }
+              test: /\.js$/,
+              exclude: /node_modules/,
+              use: {
+                loader: 'babel-loader',
+                options: {
+                  cacheDirectory: true,
+                  presets: [
+                    [
+                      '@babel/preset-env',
+                      {
+                        forceAllTransforms: true
+                      }
+                    ]
+                  ]
                 }
-            },
-        ]
+              }
+            }
+          ]
     },
     mode: "development",
 }
