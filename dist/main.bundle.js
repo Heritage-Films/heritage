@@ -23,14 +23,15 @@ return /******/ (() => { // webpackBootstrap
 /*!********************!*\
   !*** ./src/cio.js ***!
   \********************/
-/*! namespace exports */
+/*! flagged exports */
+/*! export __esModule [provided] [no usage info] [missing usage info prevents renaming] */
 /*! export default [provided] [no usage info] [missing usage info prevents renaming] */
 /*! other exports [not provided] [no usage info] */
-/*! runtime requirements: __webpack_exports__, __webpack_require__.r, __webpack_require__.d, __webpack_require__.* */
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/*! runtime requirements: __webpack_exports__ */
+/***/ ((__unused_webpack_module, exports) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\nfunction trackCioId() {\n  var params = new URLSearchParams(document.location.search.substring(1));\n  var cio_id = params.get('cio_id');\n  analytics.identify(cio_id);\n}\n\ntrackCioId();\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (trackCioId);\n\n//# sourceURL=webpack://HeritageAnalytics/./src/cio.js?");
+eval("\n\nObject.defineProperty(exports, \"__esModule\", ({\n  value: true\n}));\nexports.default = void 0;\n\nfunction trackCioId() {\n  var params = new URLSearchParams(document.location.search.substring(1));\n  var cio_id = params.get('cio_id');\n  analytics.identify(cio_id);\n}\n\ntrackCioId();\nvar _default = trackCioId;\nexports.default = _default;\n\n//# sourceURL=webpack://HeritageAnalytics/./src/cio.js?");
 
 /***/ }),
 
@@ -38,14 +39,15 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
-/*! namespace exports */
-/*! export initMiddleware [provided] [maybe used in main (runtime-defined)] [usage prevents renaming] -> ./src/initMiddleware.js .default */
+/*! flagged exports */
+/*! export __esModule [provided] [maybe used in main (runtime-defined)] [usage prevents renaming] */
+/*! export initMiddleware [provided] [maybe used in main (runtime-defined)] [usage prevents renaming] */
 /*! other exports [not provided] [maybe used in main (runtime-defined)] */
-/*! runtime requirements: __webpack_require__, __webpack_require__.n, __webpack_exports__, __webpack_require__.d, __webpack_require__.r, __webpack_require__.* */
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/*! runtime requirements: __webpack_exports__, __webpack_require__ */
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"initMiddleware\": () => /* reexport safe */ _initMiddleware__WEBPACK_IMPORTED_MODULE_2__.default\n/* harmony export */ });\n/* harmony import */ var core_js_stable__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/stable */ \"./node_modules/core-js/stable/index.js\");\n/* harmony import */ var core_js_stable__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_stable__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var regenerator_runtime_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! regenerator-runtime/runtime */ \"./node_modules/regenerator-runtime/runtime.js\");\n/* harmony import */ var regenerator_runtime_runtime__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(regenerator_runtime_runtime__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _initMiddleware__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./initMiddleware */ \"./src/initMiddleware.js\");\n/* harmony import */ var _cio__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./cio */ \"./src/cio.js\");\n;\n\n\n\n\n\n//# sourceURL=webpack://HeritageAnalytics/./src/index.js?");
+eval("\n\nObject.defineProperty(exports, \"__esModule\", ({\n  value: true\n}));\nObject.defineProperty(exports, \"initMiddleware\", ({\n  enumerable: true,\n  get: function get() {\n    return _initMiddleware.default;\n  }\n}));\n\n__webpack_require__(/*! core-js/stable */ \"./node_modules/core-js/stable/index.js\");\n\n__webpack_require__(/*! regenerator-runtime/runtime */ \"./node_modules/regenerator-runtime/runtime.js\");\n\nvar _initMiddleware = _interopRequireDefault(__webpack_require__(/*! ./initMiddleware */ \"./src/initMiddleware.js\"));\n\nvar _cio = _interopRequireDefault(__webpack_require__(/*! ./cio */ \"./src/cio.js\"));\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\n//# sourceURL=webpack://HeritageAnalytics/./src/index.js?");
 
 /***/ }),
 
@@ -53,14 +55,15 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /*!*******************************!*\
   !*** ./src/initMiddleware.js ***!
   \*******************************/
-/*! namespace exports */
+/*! flagged exports */
+/*! export __esModule [provided] [no usage info] [missing usage info prevents renaming] */
 /*! export default [provided] [no usage info] [missing usage info prevents renaming] */
 /*! other exports [not provided] [no usage info] */
-/*! runtime requirements: __webpack_exports__, __webpack_require__.r, __webpack_require__.d, __webpack_require__.* */
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/*! runtime requirements: __webpack_exports__ */
+/***/ ((__unused_webpack_module, exports) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\nfunction asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }\n\nfunction _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, \"next\", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, \"throw\", err); } _next(undefined); }); }; }\n\nfunction initMiddleware() {\n  analytics.addSourceMiddleware( /*#__PURE__*/function () {\n    var _ref2 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee(_ref) {\n      var payload, next, integrations, ajs_user_traits, ajs_user_id, ip_data, url, response, person, traits;\n      return regeneratorRuntime.wrap(function _callee$(_context) {\n        while (1) {\n          switch (_context.prev = _context.next) {\n            case 0:\n              payload = _ref.payload, next = _ref.next, integrations = _ref.integrations;\n              ajs_user_traits = JSON.parse(localStorage.getItem('ajs_user_traits'));\n              ajs_user_id = JSON.parse(localStorage.getItem('ajs_user_id'));\n              ip_data = JSON.parse(localStorage.getItem('hf_ip_data')); // console.log(`Analytic event type: ${payload.type()}`)\n              // console.log(payload)\n\n              if (!(ajs_user_id !== null && (ajs_user_id === null || ajs_user_id === void 0 ? void 0 : ajs_user_id.length) === 24)) {\n                _context.next = 7;\n                break;\n              }\n\n              next(payload);\n              return _context.abrupt(\"return\");\n\n            case 7:\n              if (!ajs_user_traits.email) {\n                _context.next = 22;\n                break;\n              }\n\n              if (!(ajs_user_id === null || (ajs_user_id === null || ajs_user_id === void 0 ? void 0 : ajs_user_id.length) !== 24)) {\n                _context.next = 19;\n                break;\n              }\n\n              // console.log('ajs_user_id ' + ajs_user_id + ' is invalid. Fetch from database.') \n              url = 'https://api.movieschangepeople.com/api/people/identify/' + encodeURIComponent(ajs_user_traits.email);\n              _context.next = 12;\n              return fetch(url);\n\n            case 12:\n              response = _context.sent;\n              _context.next = 15;\n              return response.json();\n\n            case 15:\n              person = _context.sent;\n\n              if (person._id) {\n                // console.log('Successfully fetched person from database')\n                // console.log(person)\n                traits = {};\n                traits.email = ajs_user_traits.email;\n                traits.created_at = person.created;\n\n                if (ip_data) {\n                  if (ip_data.country_name) {\n                    traits.ip_country_name = ip_data.country_name;\n                  }\n\n                  if (ip_data.country_code) {\n                    traits.ip_country_code = ip_data.country_code;\n                  }\n\n                  if (ip_data.city) {\n                    traits.ip_city = ip_data.city;\n                  }\n\n                  if (ip_data.region) {\n                    traits.ip_region = ip_data.region;\n                  }\n\n                  if (ip_data.region_code) {\n                    traits.ip_region_code = ip_data.region_code;\n                  }\n\n                  if (ip_data.postal) {\n                    traits.ip_postal_code = ip_data.postal;\n                  }\n\n                  if (ip_data.latitude) {\n                    traits.ip_latitude = ip_data.latitude;\n                  }\n\n                  if (ip_data.longitude) {\n                    traits.ip_longitude = ip_data.longitude;\n                  }\n\n                  if (ip_data.time_zone) {\n                    traits.timezone = ip_data.time_zone.name;\n                  }\n                }\n\n                analytics.identify(person._id, traits);\n\n                if (typeof gtag === 'function') {\n                  gtag('config', 'G-M0QTVC5740', {\n                    'user_id': person._id\n                  });\n                }\n\n                if (payload.type() !== 'identify') {\n                  next(payload);\n                }\n              } else {// console.log('Unable to fetch person from database')\n              }\n\n              _context.next = 20;\n              break;\n\n            case 19:\n              // console.log('ajs_user_id is valid. call next.')\n              next(payload);\n\n            case 20:\n              _context.next = 22;\n              break;\n\n            case 22:\n            case \"end\":\n              return _context.stop();\n          }\n        }\n      }, _callee);\n    }));\n\n    return function (_x) {\n      return _ref2.apply(this, arguments);\n    };\n  }());\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (initMiddleware);\n\n//# sourceURL=webpack://HeritageAnalytics/./src/initMiddleware.js?");
+eval("\n\nObject.defineProperty(exports, \"__esModule\", ({\n  value: true\n}));\nexports.default = void 0;\n\nfunction asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }\n\nfunction _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, \"next\", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, \"throw\", err); } _next(undefined); }); }; }\n\nfunction initMiddleware() {\n  analytics.addSourceMiddleware( /*#__PURE__*/function () {\n    var _ref = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee(_ref2) {\n      var payload, next, integrations, ajs_user_traits, ajs_user_id, ip_data, url, response, person, traits;\n      return regeneratorRuntime.wrap(function _callee$(_context) {\n        while (1) {\n          switch (_context.prev = _context.next) {\n            case 0:\n              payload = _ref2.payload, next = _ref2.next, integrations = _ref2.integrations;\n              ajs_user_traits = JSON.parse(localStorage.getItem('ajs_user_traits'));\n              ajs_user_id = JSON.parse(localStorage.getItem('ajs_user_id'));\n              ip_data = JSON.parse(localStorage.getItem('hf_ip_data')); // console.log(`Analytic event type: ${payload.type()}`)\n              // console.log(payload)\n\n              if (!(ajs_user_id !== null && (ajs_user_id === null || ajs_user_id === void 0 ? void 0 : ajs_user_id.length) === 24)) {\n                _context.next = 7;\n                break;\n              }\n\n              next(payload);\n              return _context.abrupt(\"return\");\n\n            case 7:\n              if (!ajs_user_traits.email) {\n                _context.next = 22;\n                break;\n              }\n\n              if (!(ajs_user_id === null || (ajs_user_id === null || ajs_user_id === void 0 ? void 0 : ajs_user_id.length) !== 24)) {\n                _context.next = 19;\n                break;\n              }\n\n              // console.log('ajs_user_id ' + ajs_user_id + ' is invalid. Fetch from database.') \n              url = 'https://api.movieschangepeople.com/api/people/identify/' + encodeURIComponent(ajs_user_traits.email);\n              _context.next = 12;\n              return fetch(url);\n\n            case 12:\n              response = _context.sent;\n              _context.next = 15;\n              return response.json();\n\n            case 15:\n              person = _context.sent;\n\n              if (person._id) {\n                // console.log('Successfully fetched person from database')\n                // console.log(person)\n                traits = {};\n                traits.email = ajs_user_traits.email;\n                traits.created_at = person.created;\n\n                if (ip_data) {\n                  if (ip_data.country_name) {\n                    traits.ip_country_name = ip_data.country_name;\n                  }\n\n                  if (ip_data.country_code) {\n                    traits.ip_country_code = ip_data.country_code;\n                  }\n\n                  if (ip_data.city) {\n                    traits.ip_city = ip_data.city;\n                  }\n\n                  if (ip_data.region) {\n                    traits.ip_region = ip_data.region;\n                  }\n\n                  if (ip_data.region_code) {\n                    traits.ip_region_code = ip_data.region_code;\n                  }\n\n                  if (ip_data.postal) {\n                    traits.ip_postal_code = ip_data.postal;\n                  }\n\n                  if (ip_data.latitude) {\n                    traits.ip_latitude = ip_data.latitude;\n                  }\n\n                  if (ip_data.longitude) {\n                    traits.ip_longitude = ip_data.longitude;\n                  }\n\n                  if (ip_data.time_zone) {\n                    traits.timezone = ip_data.time_zone.name;\n                  }\n                }\n\n                analytics.identify(person._id, traits);\n\n                if (typeof gtag === 'function') {\n                  gtag('config', 'G-M0QTVC5740', {\n                    'user_id': person._id\n                  });\n                }\n\n                if (payload.type() !== 'identify') {\n                  next(payload);\n                }\n              } else {// console.log('Unable to fetch person from database')\n              }\n\n              _context.next = 20;\n              break;\n\n            case 19:\n              // console.log('ajs_user_id is valid. call next.')\n              next(payload);\n\n            case 20:\n              _context.next = 22;\n              break;\n\n            case 22:\n            case \"end\":\n              return _context.stop();\n          }\n        }\n      }, _callee);\n    }));\n\n    return function (_x) {\n      return _ref.apply(this, arguments);\n    };\n  }());\n}\n\nvar _default = initMiddleware;\nexports.default = _default;\n\n//# sourceURL=webpack://HeritageAnalytics/./src/initMiddleware.js?");
 
 /***/ }),
 
@@ -4976,30 +4979,6 @@ eval("/**\n * Copyright (c) 2014-present, Facebook, Inc.\n *\n * This source cod
 /******/ 	}
 /******/ 	
 /************************************************************************/
-/******/ 	/* webpack/runtime/compat get default export */
-/******/ 	(() => {
-/******/ 		// getDefaultExport function for compatibility with non-harmony modules
-/******/ 		__webpack_require__.n = (module) => {
-/******/ 			var getter = module && module.__esModule ?
-/******/ 				() => module['default'] :
-/******/ 				() => module;
-/******/ 			__webpack_require__.d(getter, { a: getter });
-/******/ 			return getter;
-/******/ 		};
-/******/ 	})();
-/******/ 	
-/******/ 	/* webpack/runtime/define property getters */
-/******/ 	(() => {
-/******/ 		// define getter functions for harmony exports
-/******/ 		__webpack_require__.d = (exports, definition) => {
-/******/ 			for(var key in definition) {
-/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
-/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
-/******/ 				}
-/******/ 			}
-/******/ 		};
-/******/ 	})();
-/******/ 	
 /******/ 	/* webpack/runtime/global */
 /******/ 	(() => {
 /******/ 		__webpack_require__.g = (function() {
@@ -5010,22 +4989,6 @@ eval("/**\n * Copyright (c) 2014-present, Facebook, Inc.\n *\n * This source cod
 /******/ 				if (typeof window === 'object') return window;
 /******/ 			}
 /******/ 		})();
-/******/ 	})();
-/******/ 	
-/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
-/******/ 	(() => {
-/******/ 		__webpack_require__.o = (obj, prop) => Object.prototype.hasOwnProperty.call(obj, prop)
-/******/ 	})();
-/******/ 	
-/******/ 	/* webpack/runtime/make namespace object */
-/******/ 	(() => {
-/******/ 		// define __esModule on exports
-/******/ 		__webpack_require__.r = (exports) => {
-/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
-/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
-/******/ 			}
-/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
-/******/ 		};
 /******/ 	})();
 /******/ 	
 /************************************************************************/
