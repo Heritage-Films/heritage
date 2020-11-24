@@ -35,6 +35,12 @@ function initMiddleware() {
                     }
                     analytics.identify(person._id, traits)
 
+                    if(typeof gtag === 'function') {
+                        gtag('config', 'G-M0QTVC5740', {
+                            'user_id': person._id
+                        });
+                    }
+
                     if(payload.type() !== 'identify') { next(payload) }
                 } else {
                     console.log('Unable to fetch person from database')
