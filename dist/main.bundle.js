@@ -30,7 +30,7 @@ return /******/ (() => { // webpackBootstrap
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\nfunction trackCioId() {\n  console.log('hello world');\n}\n\ntrackCioId();\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (trackCioId);\n\n//# sourceURL=webpack://HeritageAnalytics/./src/cio.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\nfunction trackCioId() {\n  var cio_id = URLSearchParams.get(cio_id);\n  console.log(cio_id);\n}\n\ntrackCioId();\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (trackCioId);\n\n//# sourceURL=webpack://HeritageAnalytics/./src/cio.js?");
 
 /***/ }),
 
