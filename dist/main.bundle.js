@@ -19,6 +19,21 @@
 return /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/cio.js":
+/*!********************!*\
+  !*** ./src/cio.js ***!
+  \********************/
+/*! namespace exports */
+/*! export default [provided] [no usage info] [missing usage info prevents renaming] */
+/*! other exports [not provided] [no usage info] */
+/*! runtime requirements: __webpack_exports__, __webpack_require__.r, __webpack_require__.d, __webpack_require__.* */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\nfunction trackCioId() {\n  console.log('hello world');\n}\n\ntrackCioId();\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (trackCioId);\n\n//# sourceURL=webpack://HeritageAnalytics/./src/cio.js?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
@@ -30,7 +45,7 @@ return /******/ (() => { // webpackBootstrap
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"initMiddleware\": () => /* reexport safe */ _initMiddleware__WEBPACK_IMPORTED_MODULE_2__.default\n/* harmony export */ });\n/* harmony import */ var core_js_stable__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/stable */ \"./node_modules/core-js/stable/index.js\");\n/* harmony import */ var core_js_stable__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_stable__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var regenerator_runtime_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! regenerator-runtime/runtime */ \"./node_modules/regenerator-runtime/runtime.js\");\n/* harmony import */ var regenerator_runtime_runtime__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(regenerator_runtime_runtime__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _initMiddleware__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./initMiddleware */ \"./src/initMiddleware.js\");\n;\n\n // import trackCioId from './cio'\n\n\n\n//# sourceURL=webpack://HeritageAnalytics/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"initMiddleware\": () => /* reexport safe */ _initMiddleware__WEBPACK_IMPORTED_MODULE_2__.default\n/* harmony export */ });\n/* harmony import */ var core_js_stable__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/stable */ \"./node_modules/core-js/stable/index.js\");\n/* harmony import */ var core_js_stable__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_stable__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var regenerator_runtime_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! regenerator-runtime/runtime */ \"./node_modules/regenerator-runtime/runtime.js\");\n/* harmony import */ var regenerator_runtime_runtime__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(regenerator_runtime_runtime__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _initMiddleware__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./initMiddleware */ \"./src/initMiddleware.js\");\n/* harmony import */ var _cio__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./cio */ \"./src/cio.js\");\n;\n\n\n\n\n\n//# sourceURL=webpack://HeritageAnalytics/./src/index.js?");
 
 /***/ }),
 
