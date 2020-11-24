@@ -5,6 +5,12 @@ function initMiddleware() {
         var ip_data = JSON.parse(localStorage.getItem('hf_ip_data'))
         // console.log(`Analytic event type: ${payload.type()}`)
         // console.log(payload)
+
+        if( (ajs_user_id !== null) && (ajs_user_id?.length === 24) ) {
+            next(payload)
+            return
+        }
+
         if(ajs_user_traits.email) {
             // console.log('ajs_user_traits.email exists.')
             // console.log(ajs_user_traits.email)
