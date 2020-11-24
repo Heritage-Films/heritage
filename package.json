@@ -7,7 +7,7 @@
     "build": "webpack",
     "git-commit": "git add -A . && git commit -a -m 'master update' && npm version patch",
     "git-push": "git push origin master --follow-tags --force && git checkout master",
-    "jsdelivr-purge": "curl https://purge.jsdelivr.net/gh/Heritage-Films/heritage-segment/dist/app.js",
+    "jsdelivr-purge": "curl https://purge.jsdelivr.net/gh/Heritage-Films/heritage-segment/dist/main.bundle.js",
     "deploy": "npm run build && npm run git-commit && npm run git-push && npm run jsdelivr-purge"
   },
   "repository": {
