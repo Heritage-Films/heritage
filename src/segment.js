@@ -1,7 +1,7 @@
 function identifyUser() {
     const params = new URLSearchParams(document.location.search.substring(1))
     const uid = params.get('uid') || params.get('cio_id')
-    const email = paras.get('email')
+    const email = params.get('email')
 
     if(uid) {
         analytics.identify(uid)
