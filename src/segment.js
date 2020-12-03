@@ -10,6 +10,4 @@ function identifyUser() {
     }
 }
 
-identifyUser()
-
 export default identifyUser
