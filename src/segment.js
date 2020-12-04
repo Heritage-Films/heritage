@@ -4,8 +4,10 @@ function identifyUser() {
     const email = params.get('email')
 
     if(uid) {
+        analytics.reset()
         analytics.identify(uid)
     } else if(email) {
+        analytics.reset()
         analytics.identify(null, { email: email })
     }
 }
