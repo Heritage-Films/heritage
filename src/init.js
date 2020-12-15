@@ -1,7 +1,9 @@
 import segment from './segment'
+import helpscout from './helpscout'
 
 const libs = {
-    segment
+    segment,
+    helpscout
 }
 
 export default function(lib) {
