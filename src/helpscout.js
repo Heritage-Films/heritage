@@ -14,4 +14,14 @@ export default function() {
             }, n.readyQueue = [], "complete" === t.readyState) return a();
         e.attachEvent ? e.attachEvent("onload", a) : e.addEventListener("load", a, !1)
     }(window, document, window.Beacon || function() {});
+
+    var beaconActions = document.querySelectorAll('[data-beacon-action]')
+    for(var i = 0; i < beaconActions.length; i++) {
+        var el = beaconActions[i]
+        var action = el.dataset.beaconAction
+        var actionOptions = el.dataset.beaconActionOptions
+        el.addEventListener('click', function() {
+            window.Beacon(action, actionOptions)
+        })
+    }
 }
