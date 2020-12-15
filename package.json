@@ -1,6 +1,6 @@
 {
   "name": "heritage-segment",
-  "version": "0.0.56",
+  "version": "0.0.57",
   "description": "",
   "main": "dist/index_bundle.js",
   "scripts": {
