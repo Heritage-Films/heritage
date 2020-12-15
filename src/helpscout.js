@@ -15,15 +15,17 @@ export default function() {
         e.attachEvent ? e.attachEvent("onload", a) : e.addEventListener("load", a, !1)
     }(window, document, window.Beacon || function() {});
 
-    var beaconActions = document.querySelectorAll('[data-beacon-action]')
-    for(var i = 0; i < beaconActions.length; i++) {
-        var el = beaconActions[i]
-        var action = el.dataset.beaconAction
-        var actionOptions = el.dataset.beaconActionOptions
-        console.log(el, action, actionOptions)
-        el.addEventListener('click', function() {
-            console.log('added click event listener')
-            window.Beacon(action, actionOptions)
-        })
-    }
+    document.addEventListener('DOMContentLoaded', (event) => {
+        var beaconActions = document.querySelectorAll('[data-beacon-action]')
+        for(var i = 0; i < beaconActions.length; i++) {
+            var el = beaconActions[i]
+            var action = el.dataset.beaconAction
+            var actionOptions = el.dataset.beaconActionOptions
+            console.log(el, action, actionOptions)
+            el.addEventListener('click', function() {
+                console.log('added click event listener')
+                window.Beacon(action, actionOptions)
+            })
+        }  
+    })
 }
