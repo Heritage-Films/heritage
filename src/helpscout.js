@@ -21,9 +21,7 @@ export default function() {
             var el = beaconActions[i]
             var action = el.dataset.beaconAction
             var actionOptions = el.dataset.beaconActionOptions
-            console.log(el, action, actionOptions)
             el.addEventListener('click', function() {
-                console.log('added click event listener')
                 window.Beacon(action, actionOptions)
             })
         }  
