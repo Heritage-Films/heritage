@@ -1,3 +1,6 @@
+import identifyMiddleware from './middleware/identify'
+import identifyFromSearchParams from './identifyFromSearchParams'
+
 export default function() {
     var analytics = window.analytics = window.analytics || [];
     if (!analytics.initialize) {
@@ -28,6 +31,13 @@ export default function() {
                 analytics._loadOptions = e
             };
             analytics.SNIPPET_VERSION = "4.13.1";
+
+            // NOT PART OF THE DEFAULT SNIPPET
+            // Init middleware
+            analytics.addSourceMiddleware(identifyMiddleware)
+
+            // Identify user is email or uid params exist in URL search
+            identifyFromSearchParams()
         }
     }
 }

@@ -1,11 +1,7 @@
 import 'core-js/stable'
 import 'regenerator-runtime/runtime'
-import initMiddleware from './initMiddleware'
-import identifyUser from './identifyUser'
-import init from './init'
+import init from './libs/init'
 
 export {
-    initMiddleware,
-    identifyUser,
     init
 }

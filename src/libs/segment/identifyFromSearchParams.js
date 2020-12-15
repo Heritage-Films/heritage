@@ -1,4 +1,4 @@
-function identifyUser() {
+export default function() {
     const params = new URLSearchParams(document.location.search.substring(1))
     const uid = params.get('uid') || params.get('cio_id')
     const email = params.get('email')
@@ -11,7 +11,3 @@ function identifyUser() {
         analytics.identify(null, { email: email })
     }
 }
-
-identifyUser()
-
-export default identifyUser
