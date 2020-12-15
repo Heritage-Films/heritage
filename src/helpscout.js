@@ -25,6 +25,5 @@ export default function() {
             console.log('added click event listener')
             window.Beacon(action, actionOptions)
         })
-
     }
 }
