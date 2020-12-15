@@ -23,5 +23,6 @@ export default function() {
         el.addEventListener('click', function() {
             window.Beacon(action, actionOptions)
         })
+        
     }
 }
