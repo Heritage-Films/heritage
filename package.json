@@ -5,6 +5,8 @@
   "main": "dist/index_bundle.js",
   "scripts": {
     "build": "webpack",
+    "babel": "node_modules/.bin/babel src/index.js -o dist/assets/main.bundle.js",
+    "webpack": "node_modules/.bin/webpack --mode production",
     "git-commit": "git add -A . && git commit -a -m 'master update' && npm version patch",
     "git-push": "git push origin master --follow-tags --force && git checkout master",
     "jsdelivr-purge": "curl https://purge.jsdelivr.net/gh/Heritage-Films/heritage-segment/dist/main.bundle.js",
@@ -21,7 +23,8 @@
   },
   "homepage": "https://github.com/Heritage-Films/heritage-segment#readme",
   "devDependencies": {
-    "@babel/core": "^7.12.3",
+    "@babel/cli": "^7.12.10",
+    "@babel/core": "^7.12.10",
     "@babel/preset-env": "^7.12.1",
     "babel-loader": "^8.2.1",
     "webpack": "^5.4.0",
